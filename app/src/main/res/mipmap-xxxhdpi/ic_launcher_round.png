@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="26702976-9665-4b02-b2a4-cf2fe0ae140f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/danielqueiroz/healthycalc/ImcActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/danielqueiroz/healthycalc/ListCalcActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/danielqueiroz/healthycalc/SqlHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/danielqueiroz/healthycalc/TmbActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_button_accent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_imc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_list_calc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tmb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/danielqueiroz/healthycalc/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/danielqueiroz/healthycalc/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/danielqueiroz/healthycalc/MainItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/danielqueiroz/healthycalc/MainItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
+        <option value="resourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ftEeM7eLlpK4P4EoOoNUTwMEaU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_28" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-08-29T21:34:45.013Z" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Android_sdk/platforms" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.1742746276">
+      <recent name="com.danielqueiroz.healthycalc" />
+    </key>
+    <key name="android.template.-1463639042">
+      <recent name="com.danielqueiroz.healthycalc" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26702976-9665-4b02-b2a4-cf2fe0ae140f" name="Default Changelist" comment="" />
+      <created>1597029082913</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597029082913</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1155" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1598497362719">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state x="-1155" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1597110314335" />
+    <state x="-1155" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1598497362719" />
+    <state x="-1280" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1598488018872">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state x="-1280" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1598488018872" />
+    <state x="-1380" y="278" key="AndroidCreateResourceFileDialog" timestamp="1598498841637">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state x="-1380" y="278" key="AndroidCreateResourceFileDialog/0.0.1280.680/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1597106316109" />
+    <state x="-1380" y="278" key="AndroidCreateResourceFileDialog/0.0.1536.824/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1598498841637" />
+    <state x="-1101" y="353" key="AndroidCreateXmlResourceDialog" timestamp="1598502307389">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state x="-1101" y="353" key="AndroidCreateXmlResourceDialog/0.0.1280.680/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1597109076679" />
+    <state x="-1101" y="353" key="AndroidCreateXmlResourceDialog/0.0.1536.824/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1598502307389" />
+    <state width="1860" height="279" key="GridCell.Tab.0.bottom" timestamp="1597033130423">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1597033130423" />
+    <state width="1860" height="279" key="GridCell.Tab.0.center" timestamp="1597033130423">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.center/0.0.1280.680/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1597033130423" />
+    <state width="1860" height="279" key="GridCell.Tab.0.left" timestamp="1597033130423">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.left/0.0.1280.680/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1597033130423" />
+    <state width="1860" height="279" key="GridCell.Tab.0.right" timestamp="1597033130423">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="279" key="GridCell.Tab.0.right/0.0.1280.680/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1597033130423" />
+    <state x="-1380" y="266" key="IDE.errors.dialog" timestamp="1597032491095">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state x="-1380" y="266" key="IDE.errors.dialog/0.0.1280.680/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1597032491095" />
+    <state x="-1524" y="158" key="SettingsEditor" timestamp="1598769817131">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state x="-1459" y="165" key="SettingsEditor/0.0.1280.680/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1597030506654" />
+    <state x="-1524" y="158" key="SettingsEditor/0.0.1536.824/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1598769817131" />
+    <state x="-1820" y="103" width="1720" height="840" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1598795181201">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state x="-1820" y="103" width="1720" height="840" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1536.824/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1598795181201" />
+    <state x="-1218" y="142" key="refactoring.ChangeSignatureDialog" timestamp="1597104011323">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state x="-1218" y="142" key="refactoring.ChangeSignatureDialog/0.0.1280.680/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1597104011323" />
+    <state x="-1297" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1598502682013">
+      <screen x="-1920" y="3" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1597109046161" />
+    <state x="-1297" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.3.1920.1040@-1920.3.1920.1040" timestamp="1598502682013" />
+  </component>
+</project>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
