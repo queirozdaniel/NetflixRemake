@@ -9,14 +9,16 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.danielqueiroz.netflixremake.R
+import com.danielqueiroz.netflixremake.model.Categories
 import com.danielqueiroz.netflixremake.model.Category
 import com.danielqueiroz.netflixremake.model.Movie
-import com.danielqueiroz.netflixremake.util.CategoryTask
-import com.danielqueiroz.netflixremake.util.ImageDownloaderTask
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_movie.view.image_view_cover
 import kotlinx.android.synthetic.main.activity_movie.view.text_view_title
 import kotlinx.android.synthetic.main.category_item.view.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,13 +33,23 @@ class MainActivity : AppCompatActivity() {
         movie_item.adapter = mainAdapter
         movie_item.layoutManager = LinearLayoutManager(this)
 
-        val categoryTask = CategoryTask(this)
-        categoryTask.setCategoryLoader { categories ->
-            mainAdapter.categories.clear()
-            mainAdapter.categories.addAll(categories)
-            mainAdapter.notifyDataSetChanged()
-        }
-        categoryTask.execute("https://tiagoaguiar.co/api/netflix/home")
+        retrofit().create(NetflixAPI::class.java)
+                .listCategories()
+                .enqueue(object : Callback<Categories>{
+                    override fun onResponse(call: Call<Categories>, response: Response<Categories>) {
+                        if (response.isSuccessful){
+                            response.body()?.let {
+                                mainAdapter.categories.clear()
+                                mainAdapter.categories.addAll(it.categories)
+                                mainAdapter.notifyDataSetChanged()
+                            }
+                        }
+                    }
+
+                    override fun onFailure(call: Call<Categories>, t: Throwable) {
+                        Toast.makeText(this@MainActivity, t.message, Toast.LENGTH_SHORT).show()
+                    }
+                })
     }
 
     private inner class MainAdapter(val categories: MutableList<Category>) : RecyclerView.Adapter<CategoryHolder>(){

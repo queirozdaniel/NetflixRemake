@@ -1,14 +1,24 @@
 package com.danielqueiroz.netflixremake.model
 
+import com.google.gson.annotations.SerializedName
+
+data class Categories(@SerializedName("category") val categories: List<Category>)
+
 data class Category(
-        var name: String = "",
-        var movies: MutableList<Movie> = arrayListOf())
+        @SerializedName("title") var name: String = "",
+        @SerializedName("movie") var movies: MutableList<Movie> = arrayListOf())
 
 data class Movie(
         var id: Int = 0,
-        var coverUrl: String = "",
+        @SerializedName("cover_url") var coverUrl: String = "",
         var title: String = "",
         var desc: String = "",
         var cast: String = "")
 
-data class MovieDetail(val movie: Movie, val moviesSimilar: List<Movie>)
+data class MovieDetail(var id: Int = 0,
+                       @SerializedName("cover_url") var coverUrl: String = "",
+                       var title: String = "",
+                       var desc: String = "",
+                       var cast: String = "",
+                       val movie: Movie,
+                       @SerializedName("movie") val moviesSimilar: List<Movie>)
