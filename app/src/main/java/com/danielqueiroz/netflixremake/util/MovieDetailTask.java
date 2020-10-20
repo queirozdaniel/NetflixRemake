@@ -4,7 +4,6 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.danielqueiroz.netflixremake.model.Category;
 import com.danielqueiroz.netflixremake.model.Movie;
 import com.danielqueiroz.netflixremake.model.MovieDetail;
 

@@ -1,5 +1,7 @@
 package com.danielqueiroz.netflixremake.kotlin
 
+import android.graphics.drawable.Drawable
+import android.graphics.drawable.LayerDrawable
 import android.media.Image
 import android.os.Bundle
 import android.view.MenuItem
@@ -7,18 +9,22 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DataSource
+import com.bumptech.glide.load.engine.GlideException
+import com.bumptech.glide.request.RequestListener
+import com.bumptech.glide.request.target.DrawableImageViewTarget
+import com.bumptech.glide.request.target.Target
 import com.danielqueiroz.netflixremake.R
 import com.danielqueiroz.netflixremake.model.Movie
-import com.danielqueiroz.netflixremake.util.ImageDownloaderTask
 import com.danielqueiroz.netflixremake.util.MovieDetailTask
 import kotlinx.android.synthetic.main.activity_movie.*
 import kotlinx.android.synthetic.main.activity_movie.image_view_cover
 import kotlinx.android.synthetic.main.activity_movie.text_view_title
 import kotlinx.android.synthetic.main.activity_movie.view.*
-import kotlinx.android.synthetic.main.category_item.*
-import kotlinx.android.synthetic.main.movie_item_similar.*
 
 class MovieActivity : AppCompatActivity() {
 
@@ -38,10 +44,23 @@ class MovieActivity : AppCompatActivity() {
                 text_view_desc.text =  movieDetail.movie.desc
                 text_view_cast.text = getString(R.string.cast, movieDetail.movie.cast)
 
-                ImageDownloaderTask(image_view_cover).apply {
-                    setShadowEnabled(true)
-                    execute(movieDetail.movie.coverUrl)
-                }
+                Glide.with(this)
+                        .load(movieDetail.movie.coverUrl)
+                        .listener(object : RequestListener<Drawable>{
+                            override fun onLoadFailed(e: GlideException?, model: Any?, target: Target<Drawable>?, isFirstResource: Boolean): Boolean {
+                                return true
+                            }
+
+                            override fun onResourceReady(resource: Drawable?, model: Any?, target: Target<Drawable>?, dataSource: DataSource?, isFirstResource: Boolean): Boolean {
+                                val drawable: LayerDrawable? = ContextCompat.getDrawable(baseContext, R.drawable.shadows) as LayerDrawable?
+                                drawable?.let {
+                                    drawable.setDrawableByLayerId(R.id.cover_drawble, resource)
+                                    (target as DrawableImageViewTarget).view.setImageDrawable(drawable)
+                                }
+                                return true
+                            }
+                        })
+                        .into(image_view_cover)
 
                 movieAdapter.movies.clear()
                 movieAdapter.movies.addAll(movieDetail.moviesSimilar)
@@ -88,7 +107,9 @@ class MovieActivity : AppCompatActivity() {
     private inner class MovieHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(movie: Movie) {
             with(itemView){
-                ImageDownloaderTask(image_view_cover).execute(movie.coverUrl)
+                Glide.with(context)
+                        .load(movie.coverUrl)
+                        .into(image_view_cover)
             }
         }
     }

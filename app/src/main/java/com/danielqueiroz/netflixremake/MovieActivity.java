@@ -18,7 +18,6 @@ import android.widget.TextView;
 
 import com.danielqueiroz.netflixremake.model.Movie;
 import com.danielqueiroz.netflixremake.model.MovieDetail;
-import com.danielqueiroz.netflixremake.util.CategoryTask;
 import com.danielqueiroz.netflixremake.util.ImageDownloaderTask;
 import com.danielqueiroz.netflixremake.util.MovieDetailTask;
 
@@ -96,6 +95,7 @@ public class MovieActivity extends AppCompatActivity implements MovieDetailTask.
         imageDownloaderTask.execute(movieDetail.getMovie().getCoverUrl());
 
         movieAdapter.setMovies(movieDetail.getMoviesSimilar());
+
         movieAdapter.notifyDataSetChanged();
     }
 
