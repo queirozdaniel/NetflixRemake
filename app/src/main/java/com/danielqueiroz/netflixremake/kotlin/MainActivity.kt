@@ -7,7 +7,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.danielqueiroz.netflixremake.MovieActivity
 import com.danielqueiroz.netflixremake.R
 import com.danielqueiroz.netflixremake.model.Category
 import com.danielqueiroz.netflixremake.model.Movie
